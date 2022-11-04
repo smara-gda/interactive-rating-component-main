@@ -159,7 +159,6 @@ section.cards-container {
 .card-rating input[type="radio"]:checked + label{
   background-color: var(--light-gray);
   color: var(--white)
- 
 }
 
 .card-rating input[type="radio"]:hover + label{
@@ -167,26 +166,19 @@ section.cards-container {
   color: var(--white)
 }
 
-
-/* .card-rating__circle {
-  background-color: var(--black-opacity);
-  border-radius: 50%;
-  padding: 0.8em 1.2em;
-  font-size: 1em;
-} */
 .star-wrapper {
   background-color: var(--black-opacity);
   border-radius: 50%;
 }
-.card-rating__circle:hover {
+/* .card-rating__circle:hover {
   background-color: var(--light-gray);
   color: var(--white);
-}
+} */
 
-.card-rating__clicked {
+/* .card-rating__clicked {
   background-color: var(--orange);
   color: var(--white);
-}
+} */
 .thankyou-card {
   display: none;
   /* display: flex; */

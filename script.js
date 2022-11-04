@@ -8,10 +8,6 @@ function toggleCard(result) {
   submitButton.addEventListener("click", (e) => {
     e.preventDefault();
     let finalResult = document.querySelector(".card-rate-selected .value");
-    selectedCircle = document.querySelector(".card-rating__clicked");
-    if (!selectedCircle) {
-      alert("Please select a rating");
-    }
     sumbitCard.style.display = "none";
     thankYouCard.style.display = "flex";
     finalResult.innerText = result;
