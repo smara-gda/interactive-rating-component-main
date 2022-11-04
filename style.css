@@ -103,6 +103,8 @@ select {
   border-radius: 2em;
   border: 1px solid black;
   height: 2.5em;
+  width: 100%;
+  margin-top: 1em;
 }
 .card-button:hover {
   background-color: var(--white);
@@ -127,13 +129,23 @@ section.cards-container {
 
 .card-rating {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
+  flex-wrap: wrap;
 }
-.card-rating li {
+.card-rating input[type="radio"]  {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.card-rating label {
   cursor: pointer;
-  padding: 10px;
-  width: 20%;
+  display: inline-block;
+  background-color: var(--black-opacity);
+  border-radius: 50%;
+  padding: 0.8em 1.2em;
+  font-size: 1em;
+  margin-top: 1em;
 }
 .card-rate-selected {
   color: var(--orange);
@@ -144,12 +156,24 @@ section.cards-container {
   font-size: 0.9em;
 }
 
-.card-rating__circle {
+.card-rating input[type="radio"]:checked + label{
+  background-color: var(--light-gray);
+  color: var(--white)
+ 
+}
+
+.card-rating input[type="radio"]:hover + label{
+  background-color: var(--orange);
+  color: var(--white)
+}
+
+
+/* .card-rating__circle {
   background-color: var(--black-opacity);
   border-radius: 50%;
   padding: 0.8em 1.2em;
   font-size: 1em;
-}
+} */
 .star-wrapper {
   background-color: var(--black-opacity);
   border-radius: 50%;

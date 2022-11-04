@@ -39,26 +39,21 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <div>
-            <ul class="card-rating">
-              <li>
-                <span class="card-rating__circle" data-rate="one"> 1</span>
-              </li>
-              <li>
-                <span class="card-rating__circle" data-rate="two"> 2</span>
-              </li>
-              <li>
-                <span class="card-rating__circle" data-rate="three"> 3</span>
-              </li>
-              <li>
-                <span class="card-rating__circle" data-rate="four"> 4</span>
-              </li>
-              <li>
-                <span class="card-rating__circle" data-rate="five"> 5</span>
-              </li>
-            </ul>
-          </div>
-          <button class="card-button">Submit</button>
+        
+            <form class="card-rating">
+              <input  type="radio" name="rating" id="rating1">
+              <label class="card-rating__circle" for="rating1">1</label>
+              <input  type="radio" name="rating" id="rating2">
+              <label class="card-rating__circle" for="rating2">2</label>
+              <input  type="radio" name="rating" id="rating3">
+              <label class="card-rating__circle" for="rating3">3</label>
+              <input  type="radio" name="rating" id="rating4">
+              <label class="card-rating__circle" for="rating4">4</label>
+              <input  type="radio" name="rating" id="rating5">
+              <label class="card-rating__circle" for="rating5">5</label>
+              <button class="card-button">Submit</button>
+            </form>
+          
           <!-- Rating state end -->
         </div>
         <div class="card thankyou-card">
